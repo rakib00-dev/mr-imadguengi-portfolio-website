@@ -1,3 +1,108 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom CSS */
+:root {
+  --primary: rgb(236, 178, 155) 100%;
+  --secondary: rgb(255, 240, 235) 100%;
+  --token-161ccc3d-44f0-4acb-b5d6-f24ee1f26c34: rgb(244, 117, 129);
+  --token-b8fbae67-9268-467f-8ac3-3bbe01e27c84: rgb(236, 178, 155);
+  --primary-gradient: linear-gradient(
+    -180deg,
+    var(--token-161ccc3d-44f0-4acb-b5d6-f24ee1f26c34, #f47581) 0%,
+    var(--token-b8fbae67-9268-467f-8ac3-3bbe01e27c84, rgb(236, 178, 155)) 100%
+  );
+  --white: #ffffff;
+  --black: #1c1c1c;
+
+  --logo-gradient: linear-gradient(
+    41deg,
+    rgb(168 43 55) 0%,
+    rgb(255 208 190) 100%
+  );
+  /* --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%); */
+  /* --orange-gradient: linear-gradient(270deg, #ffb978 0%, #ff922d 100%); */
+  /* --blue: #4066ff; */
+  /* --lightBlue: #eeeeff; */
+  --shadow: 0px 23px 21px -8px rgba(255, 186, 136, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', 'Manrope Placeholder', sans-serif;
+  scroll-behavior: smooth;
+  font-size: 1rem;
+}
+
+body {
+  background-color: var(--black);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.paddings {
+  padding: 1.5rem;
+}
+
+.innerWidth {
+  width: 100%;
+}
+
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.primaryText {
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.secondaryText {
+  color: rgb(140 139 139);
+  font-size: 0.9rem;
+}
+
+.rosePinkText {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+  .rosePinkText {
+    font-size: 1.2rem;
+  }
+}

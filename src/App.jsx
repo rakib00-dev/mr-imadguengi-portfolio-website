@@ -1,5 +1,12 @@
+import Button from './components/Button';
+import Navbar from './components/Navbar';
+
 function App() {
-  return <></>;
+  return (
+    <>
+      <Navbar />
+    </>
+  );
 }
 
 export default App;
