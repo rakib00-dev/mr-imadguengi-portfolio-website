@@ -1,8 +1,11 @@
-const Button = ({ px = '4', py = '[10px]', fontSize, text }) => {
+const Button = ({ px = '20', py = '10', fontSize, text, className }) => {
   return (
     <div
-      className={`px-${px} py-${py} w-fit rounded-xl font-bold text-${fontSize} text-white`}
-      style={{ background: 'var(--primary-gradient)' }}
+      className={` w-fit rounded-xl font-bold text-${fontSize} text-white transition-all ${className}`}
+      style={{
+        background: 'var(--primary-gradient)',
+        padding: `${py}px ${px}px`,
+      }}
     >
       {text}
     </div>

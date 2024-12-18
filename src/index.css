@@ -34,7 +34,7 @@
   box-sizing: border-box;
   font-family: 'Manrope', 'Manrope Placeholder', sans-serif;
   scroll-behavior: smooth;
-  font-size: 1rem;
+  font-size: 1 rem;
 }
 
 body {
@@ -106,3 +106,27 @@ a {
     font-size: 1.2rem;
   }
 }
+
+/* Navbar ⬇️ */
+.navLinkHover {
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background: var(--primary);
+    transform: scaleX(0);
+    transition: 0.3s;
+    z-index: 12;
+  }
+  &:hover {
+    transform: scaleX(1);
+  }
+}
+/* Navbar ⬆️ */
