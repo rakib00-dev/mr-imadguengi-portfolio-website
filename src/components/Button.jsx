@@ -1,6 +1,6 @@
 const Button = ({ px = '20', py = '10', fontSize, text, className }) => {
   return (
-    <div
+    <span
       className={` w-fit rounded-xl font-bold text-${fontSize} text-white transition-all ${className}`}
       style={{
         background: 'var(--primary-gradient)',
@@ -8,7 +8,7 @@ const Button = ({ px = '20', py = '10', fontSize, text, className }) => {
       }}
     >
       {text}
-    </div>
+    </span>
   );
 };
 

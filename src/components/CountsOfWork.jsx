@@ -2,9 +2,9 @@ import CountUp from 'react-countup';
 
 const CountsOfWork = () => {
   return (
-    <div className="">
-      <div className="paddings innerWidth flexCenter w-4/5 gap-10 text-lg">
-        <div className="flex py-10 flex-col justify-center items-center ">
+    <section className="mb-14">
+      <div className="paddings innerWidth flexCenter w-4/5 gap-16 text-lg flex-wrap">
+        <div className="flex py-10 flex-col justify-center items-center">
           <div>
             <CountUp
               start={400}
@@ -53,7 +53,7 @@ const CountsOfWork = () => {
           Experience
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

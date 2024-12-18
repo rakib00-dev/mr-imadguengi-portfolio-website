@@ -1,9 +1,10 @@
-import Button from './components/Button';
 import Companies from './components/Companies';
 import CountsOfWork from './components/CountsOfWork';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-// import { motion, useScroll } from 'motion/react';
+import Project from './components/Project';
+import Services from './components/Services';
+import { motion, useScroll } from 'motion/react';
 
 function App() {
   // const { scrollYProgress } = useScroll();
@@ -15,6 +16,8 @@ function App() {
       <Header />
       <Companies />
       <CountsOfWork />
+      <Services />
+      <Project />
     </>
   );
 }
