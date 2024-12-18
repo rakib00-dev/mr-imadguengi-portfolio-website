@@ -1,4 +1,5 @@
 import Button from './components/Button';
+import Companies from './components/Companies';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
 
@@ -7,6 +8,7 @@ function App() {
     <>
       <Navbar />
       <Header />
+      <Companies />
     </>
   );
 }

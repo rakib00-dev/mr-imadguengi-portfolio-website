@@ -2,8 +2,14 @@ import Button from './Button';
 
 const Header = () => {
   return (
-    <div className=" hero bg-base-200 min-h-screen ">
-      <div></div>
+    <div className="hero bg-base-200 min-h-screen relative">
+      <div
+        className="absolute text-white top-14 border border-y-2 rounded-3xl p-2"
+        style={{ borderColor: 'var(--border)' }}
+      >
+        Cinematic Editing Services, Creative Video Production, & More
+      </div>
+
       <div className=" paddings innerWidth flexCenter hero-content flex-col lg:flex-col-reverse xl:flex-row-reverse justify-around gap-22">
         {/* blur effect */}
         <div

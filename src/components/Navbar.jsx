@@ -27,9 +27,9 @@ const Navbar = () => {
           />
         </div>
         <div className="flex lg:gap-0 xl:gap-3  ">
-          <ul className="menu menu-horizontal px-4 flexCenter nav-menu ">
+          <ul className="menu menu-horizontal px-4 flexCenter nav-menu gap-3">
             {/* <div className="flexCenter nav-menu gap-3 "> */}
-            <li className="navLinkHover">
+            <li>
               <a
                 href="#"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
@@ -37,7 +37,7 @@ const Navbar = () => {
                 Home
               </a>
             </li>
-            <li className="navLinkHover">
+            <li>
               <a
                 href="#"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
@@ -45,7 +45,7 @@ const Navbar = () => {
                 About
               </a>
             </li>
-            <li className="navLinkHover">
+            <li>
               <a
                 href="#"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
@@ -53,7 +53,7 @@ const Navbar = () => {
                 Services
               </a>
             </li>
-            <li className="navLinkHover">
+            <li>
               <a
                 href="#"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
@@ -61,7 +61,7 @@ const Navbar = () => {
                 Project
               </a>
             </li>
-            <li className="navLinkHover">
+            <li>
               <a
                 href="#"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
