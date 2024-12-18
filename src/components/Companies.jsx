@@ -17,7 +17,7 @@ const Companies = () => {
   ];
 
   return (
-    <div className="flex flex-row w-4/5">
+    <div className="flex flex-row w-4/5 overflow-hidden">
       {/* cards */}
       <div className="paddings innerWith flex flex-row justify-center slider-track">
         {/* card */}
@@ -37,12 +37,12 @@ const Companies = () => {
             </marquee>
           </div>
         ))}
-        <img
+        {/* <img
           src="https://cdn.sanity.io/images/k0dlbavy/production/01dbf9ca610de17a0a6e6ac232698670e2432c61-398x280.svg?w=57&auto=format&h=40&fit=min"
           alt="companies"
           className="rounded-sm"
           width={100}
-        />
+        /> */}
       </div>
     </div>
   );
