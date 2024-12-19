@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 const Header = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen relative">
+    <div className="hero bg-base-200 min-h-screen relative overflow-y-hidden">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}

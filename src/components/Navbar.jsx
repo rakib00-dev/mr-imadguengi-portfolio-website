@@ -1,7 +1,20 @@
 import Button from './Button';
 import { motion } from 'motion/react';
+import { useState } from 'react';
+import { BiMenuAltRight } from 'react-icons/bi';
+import OutsideClickHandler from 'react-outside-click-handler';
 
 const Navbar = ({ className, children }) => {
+  const [menuOpened, setmenuOpened] = useState(false);
+
+  const getMenuStyle = (menuOpened) => {
+    if (document.documentElement.clientWidth <= 800) {
+      console.log(!menuOpened);
+
+      return { top: !menuOpened && '-100%' };
+    }
+  };
+
   return (
     <motion.section
       initial={{ y: -100, opacity: 0 }}
@@ -10,7 +23,7 @@ const Navbar = ({ className, children }) => {
         delay: 0.8,
         type: 'spring',
       }}
-      className={`nav-wrapper ${className}`}
+      className={`nav-wrapper ${className} overflow-hidden`}
       style={{ backgroundColor: 'var(--black)' }}
     >
       {/* nav-container */}
@@ -34,8 +47,15 @@ const Navbar = ({ className, children }) => {
             className="filter invert saturate-200 brightness-[110%] contrast-[101%]"
           />
         </div>
-        <div className="flex lg:gap-0 xl:gap-3  ">
-          <ul className="menu menu-horizontal px-4 flexCenter nav-menu gap-3">
+        <OutsideClickHandler
+          onOutsideClick={() => {
+            setmenuOpened(false);
+          }}
+        >
+          <ul
+            className="menu menu-horizontal px-4 flexCenter nav-menu gap-3  h-menu"
+            style={getMenuStyle(menuOpened)}
+          >
             {/* <div className="flexCenter nav-menu gap-3 "> */}
             <li>
               <a
@@ -79,16 +99,25 @@ const Navbar = ({ className, children }) => {
               </a>
             </li>
             {/* </div> */}
+            <Button
+              text={'Book A Call'}
+              fontSize={'xl'}
+              className={
+                'scale-95 hover:scale-100 cursor-pointer lg:text-sm xl:text-xl'
+              }
+            />
           </ul>
           {/* <a href="#"> */}
-          <Button
-            text={'Book A Call'}
-            fontSize={'xl'}
-            className={
-              'scale-95 hover:scale-100 cursor-pointer lg:text-sm xl:text-xl'
-            }
-          />
           {/* </a> */}
+        </OutsideClickHandler>
+        {/* menu icon */}
+        <div
+          className="menu-icon cursor-pointer"
+          onClick={() => {
+            setmenuOpened((preState) => !preState);
+          }}
+        >
+          <BiMenuAltRight size={30} />
         </div>
       </div>
       {children}

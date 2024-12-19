@@ -2,7 +2,7 @@ import { div } from 'motion/react-client';
 
 const Card = ({ title = 'Card title', price = 30, crown, children }) => {
   return (
-    <div className="card bg-base-100 w-[24rem] h-[30rem]  shadow-xl text-white relative flex justify-center items-center">
+    <div className="card bg-base-100 w-[24rem] h-[30rem]  shadow-xl text-white relative flex justify-center items-center overflow-hidden">
       {/* h-[25rem] */}
       <div
         className=" h-60 w-60 blur-[220px] absolute"

@@ -18,7 +18,6 @@ function App() {
     const winYscroll = window.scrollY;
     if (winYscroll >= 92) {
       setActive(true);
-      console.log('true');
     } else {
       return setActive(false);
     }
