@@ -58,7 +58,7 @@ const Navbar = () => {
                 href="#"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
               >
-                Project
+                Projects
               </a>
             </li>
             <li>

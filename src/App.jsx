@@ -2,7 +2,7 @@ import Companies from './components/Companies';
 import CountsOfWork from './components/CountsOfWork';
 import Header from './components/Header';
 import Navbar from './components/Navbar';
-import Project from './components/Project';
+import Projects from './components/Projects';
 import Services from './components/Services';
 import { motion, useScroll } from 'motion/react';
 
@@ -17,7 +17,7 @@ function App() {
       <Companies />
       <CountsOfWork />
       <Services />
-      <Project />
+      <Projects />
     </>
   );
 }

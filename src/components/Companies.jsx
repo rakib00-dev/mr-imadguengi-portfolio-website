@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import React from 'react';
+import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { AutoScroll } from '@splidejs/splide-extension-auto-scroll';
+import '@splidejs/splide/dist/css/splide.min.css';
 
 const Companies = () => {
-  const [height, setHeight] = useState('');
-
   const copmaniesLogo = [
     'https://cdn.sanity.io/images/k0dlbavy/production/276205623f6b72641a385571dbc7a92ed1a37a0a-90x32.svg?w=84&auto=format&h=30&fit=min',
     'https://cdn.sanity.io/images/k0dlbavy/production/63f970d590a12cdb6a6edfdc64068eb82964c75d-175x29.svg?w=181&auto=format&h=30&fit=min',
@@ -17,25 +18,39 @@ const Companies = () => {
   ];
 
   return (
-    <div className="flex flex-row w-4/5 overflow-hidden">
+    <div className="flex flex-row w-full justify-center items-center cursor-pointer">
       {/* cards */}
-      <div className="paddings innerWith flex flex-row justify-center slider-track">
+      <Splide
+        options={{
+          type: 'loop', // Loop back to the beginning when reaching the end
+          autoScroll: {
+            pauseOnHover: false, // Do not pause scrolling when hovering over the carousel
+            pauseOnFocus: false, // Do not pause scrolling when the carousel is focused
+            rewind: true, // Rewind to start when the end is reached
+            speed: 1, // Scrolling speed
+          },
+          arrows: false, // Hide navigation arrows
+          pagination: false, // Hide pagination dots
+          fixedWidth: '445px', // Fixed width for each slide
+          // Gap between slides
+        }}
+        extensions={{ AutoScroll }} // Use the AutoScroll extension
+        className="paddings innerWith flex flex-row justify-center slider-track overflow-hidden"
+      >
         {/* card */}
         {copmaniesLogo.map((src, i) => (
-          <div
-            className="p-2 flex gap-20 w-80 shadow-xl justify-center items-center slide"
+          <SplideSlide
+            className="p-2 flex w-80 shadow-xl justify-center items-center slide"
             key={i}
           >
-            <marquee>
-              <img
-                src={src}
-                alt="companies"
-                className="rounded-sm "
-                // width={288}
-                // height={}f
-              />
-            </marquee>
-          </div>
+            <img
+              src={src}
+              alt="companies"
+              className="rounded-sm "
+              // width={288}
+              // height={}f
+            />
+          </SplideSlide>
         ))}
         {/* <img
           src="https://cdn.sanity.io/images/k0dlbavy/production/01dbf9ca610de17a0a6e6ac232698670e2432c61-398x280.svg?w=57&auto=format&h=40&fit=min"
@@ -43,7 +58,7 @@ const Companies = () => {
           className="rounded-sm"
           width={100}
         /> */}
-      </div>
+      </Splide>
     </div>
   );
 };
