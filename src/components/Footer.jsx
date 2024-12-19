@@ -1,6 +1,9 @@
 const Footer = () => {
   return (
-    <footer className="paddings innerWidth footer footer-center bg-[#ecb29b] text-primary-content p-10">
+    <footer
+      id="contact"
+      className="paddings innerWidth footer footer-center bg-[#ecb29b] text-primary-content p-10"
+    >
       <aside>
         <div
           style={{ background: 'var(--logo-gradient)' }}
@@ -22,7 +25,7 @@ const Footer = () => {
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </aside>
       <nav>
-        <div className="grid grid-flow-col gap-4">
+        <div className="grid grid-flow-col gap-4 *:cursor-pointer">
           <a>
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -11,7 +11,7 @@ const Navbar = ({ className, children }) => {
     if (document.documentElement.clientWidth <= 800) {
       console.log(!menuOpened);
 
-      return { top: !menuOpened && '-100%' };
+      return { top: !menuOpened && '-600%' };
     }
   };
 
@@ -23,27 +23,28 @@ const Navbar = ({ className, children }) => {
         delay: 0.8,
         type: 'spring',
       }}
-      className={`nav-wrapper ${className} overflow-hidden`}
+      className={`nav-wrapper ${className} `}
       style={{ backgroundColor: 'var(--black)' }}
     >
       {/* nav-container */}
       <div
-        className="navbar h-fit p-3 flexCenter innerWidth nav-container gap-44 lg:gap-20 "
+        className="navbar h-fit p-3 flexCenter innerWidth nav-container gap-0 md:gap-22 lg:gap-44"
         style={{
           backgroundColor: 'var(--black) !importent',
           justifyContent: 'space-around',
+          flexWrap: 'nowrap',
         }}
       >
         {/* logo */}
         <div
           style={{ background: 'var(--logo-gradient)' }}
-          className="fill-white p-1 rounded-xl "
+          className="fill-white p-1 rounded-xl h-[3rem] w-[3rem]"
         >
           <img
             loading="lazy"
             src="./assets/images/navbar/logo1.png"
             alt="logo"
-            width={40}
+            height={40}
             className="filter invert saturate-200 brightness-[110%] contrast-[101%]"
           />
         </div>
@@ -103,7 +104,7 @@ const Navbar = ({ className, children }) => {
               text={'Book A Call'}
               fontSize={'xl'}
               className={
-                'scale-95 hover:scale-100 cursor-pointer lg:text-sm xl:text-xl'
+                'scale-95 hover:scale-100 cursor-pointer px-4 py-2 text-xs md:text-md lg:text-lg'
               }
             />
           </ul>

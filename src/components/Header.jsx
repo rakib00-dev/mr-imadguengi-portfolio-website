@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 const Header = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen relative overflow-y-hidden">
+    <div className="hero bg-base-200 min-h-screen relative ">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -11,13 +11,14 @@ const Header = () => {
           delay: 1,
           type: 'spring',
         }}
-        className="absolute text-white top-14 border border-y-2 rounded-3xl p-2"
+        className="absolute text-white top-14 border border-y-2 rounded-3xl p-2 text-sm md:text-lg "
         style={{ borderColor: 'var(--border)' }}
       >
         Cinematic Editing Services, Creative Video Production, & More
       </motion.div>
 
-      <div className=" paddings innerWidth flexCenter hero-content flex-col lg:flex-col-reverse xl:flex-row-reverse justify-around gap-22">
+      {/* header image content */}
+      <div className="paddings innerWidth flexCenter hero-content justify-around gap-22 mt-32 flex-col sm:flex-row lg:flex-nowrap lg:flex-row-reverse">
         {/* blur effect */}
         <div
           className=" h-80 w-80 blur-[220px] z-[-1] absolute"
@@ -25,7 +26,7 @@ const Header = () => {
         ></div>
 
         {/* hero image */}
-        <div className="relative max-w-[30rem]  h-[20rem]">
+        <div className="relative max-w-[30rem]  h-[20rem] ">
           <motion.div
             initial={{ scale: 0.8, x: 150, opacity: 0 }}
             animate={{ scale: 1, x: 0, opacity: 1 }}
@@ -56,9 +57,9 @@ const Header = () => {
             delay: 1,
             type: 'spring',
           }}
-          className="xl:w-2/4 lg:w-4/5"
+          className="w-full  md:w-1/2"
         >
-          <h1 className="text-5xl font-bold text-white leading-tight">
+          <h1 className="text-2xl font-bold text-white leading-tight lg:text-5xl">
             Cutting-Edge Creations: Where Your Vision Comes to Life
           </h1>
           <p className="py-6">
