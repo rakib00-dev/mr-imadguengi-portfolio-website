@@ -67,7 +67,10 @@ const Header = () => {
             visual experiences. Using the latest tools and techniques, we bring
             your ideas to life with creativity and precision, crafting
             captivating content for marketing, social media, and cinematic
-            projects.
+            projects.{' '}
+            <a href="#about">
+              <span className="text-[#ecb29b]">...& More</span>
+            </a>
           </p>
           <a href="#" className="flex  justify-start w-full">
             <Button
