@@ -7,6 +7,7 @@ import Projects from './components/Projects';
 import Services from './components/Services';
 import { motion, useScroll } from 'motion/react';
 import About from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -43,6 +44,7 @@ function App() {
       <Services />
       <Projects />
       <About />
+      <Footer />
     </>
   );
 }
