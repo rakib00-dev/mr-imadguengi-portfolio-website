@@ -28,7 +28,7 @@ const About = () => {
             className="relative rounded-xl h-auto w-auto md:h-[18rem] md:w-4/5 top-0"
           />
           {/* about content */}
-          <div className="flex flex-col justify-around h-40 lg:h-72">
+          <div className="flex flex-col justify-around h-96 md:h-72">
             <h2 className="relative top-0 font-bold text-2xl text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text mb-5 md:text-4xl">
               Bringing Your Vision to Life
             </h2>

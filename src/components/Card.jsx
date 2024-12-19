@@ -11,7 +11,7 @@ const Card = ({ title = 'Card title', price = 30, crown, children }) => {
 
       {/* card body */}
       <div className=" relative card-body text-center gap-12 w-[23rem]   ">
-        <h2 className="card-title flex justify-center items-center text-3xl  font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text relative mb-12 mt-4 w-full md:text-5xl">
+        <h2 className="card-title flex justify-center items-center   font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text relative mb-12 mt-4 w-full text-3xl md:text-4xl xl:text-5xl">
           {title}
           <span>{crown}</span>{' '}
           <img
@@ -26,7 +26,7 @@ const Card = ({ title = 'Card title', price = 30, crown, children }) => {
             }}
           />
         </h2>
-        <ul className=" p-2 flex justify-center flex-col items-start leading-[2.5rem] text-[.9rem] ml-5 md:text-[1rem]">
+        <ul className=" p-2 flex justify-center flex-col items-start leading-[2.5rem] text-[.9rem] ml-5 md:*text-[1rem] xl:p-10">
           {children}
         </ul>
       </div>

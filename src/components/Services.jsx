@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="paddings innerWidth gird items-center relative  "
+      className="paddings innerWidth gird items-center relative "
     >
       {/* head */}
       <img
@@ -25,7 +25,7 @@ const Services = () => {
         services
       </h1>
       {/* cards */}
-      <div className="p-1 innerWidth w-4/5 flex justify-center items-center gap-12 mt-12 flex-wrap md:p-">
+      <div className="p-1 innerWidth w-4/5 flex justify-center items-center gap-12 mt-12 flex-col md:p-6 lg:flex-row">
         {/* card1 */}
         <Card title="Basic">
           <li>{'>'} Cutting and trimming clips</li>
