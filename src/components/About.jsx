@@ -19,7 +19,7 @@ const About = () => {
       </h1>
       {/* projects */}
 
-      <div className="paddings innerWidth w-4/5 flex justify-center items-center gap-12  mt-12">
+      <div className="p-2 innerWidth w-4/5 flex justify-center items-center gap-12  mt-12">
         {/* about container */}
         <div className="flex h-fit w-4/5 justify-center items-center flex-col m-auto gap-6 lg:flex-row ">
           <img
