@@ -4,7 +4,7 @@ const Project = () => {
   return (
     <section
       id="projects"
-      className="paddings innerWidth gird items-center relative w-4/5 overflow-hidden"
+      className="paddings innerWidth gird items-center relative w-4/5 overflow-hidden bg-[#1c1c1c] border-[#2c2c2c] border-b-4 rounded-2xl"
     >
       <h1 className="text-3xl flex gap-3 w-full font-extrabold text-white justify-end sm:text-4xl md:text-6xl">
         Reallife{'   '}

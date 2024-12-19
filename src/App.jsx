@@ -1,4 +1,4 @@
-import { act, useEffect, useState } from 'react';
+import { useState } from 'react';
 import Companies from './components/Companies';
 import CountsOfWork from './components/CountsOfWork';
 import Header from './components/Header';
@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import Services from './components/Services';
 import { motion, useScroll } from 'motion/react';
+import About from './components/About';
 
 function App() {
   const { scrollYProgress } = useScroll();
@@ -41,6 +42,7 @@ function App() {
       <CountsOfWork />
       <Services />
       <Projects />
+      <About />
     </>
   );
 }
