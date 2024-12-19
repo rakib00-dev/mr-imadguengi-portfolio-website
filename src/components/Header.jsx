@@ -26,13 +26,13 @@ const Header = () => {
 
         {/* hero image */}
         <div className="relative max-w-[30rem]  h-[20rem]">
-          <div
-            // initial={{ scale: 0.8, x: 100, opacity: 0 }}
-            // animate={{ scale: 1, x: 0, opacity: 1 }}
-            // transition={{
-            //   delay: 1,
-            //   type: 'spring',
-            // }}
+          <motion.div
+            initial={{ scale: 0.8, x: 150, opacity: 0 }}
+            animate={{ scale: 1, x: 0, opacity: 1 }}
+            transition={{
+              delay: 1,
+              type: 'spring',
+            }}
             className="relative rounded-lg  max-w-[30rem] border-solid border-[#ac17626d] border  h-[20rem] shadow-2xl "
           >
             <motion.img
@@ -45,7 +45,7 @@ const Header = () => {
               src="./assets/images/hero/hero2.jpg"
               className="rounded-lg shadow-2xl  bg-center w-full h-full"
             />
-          </div>
+          </motion.div>
         </div>
 
         {/* hero content */}
