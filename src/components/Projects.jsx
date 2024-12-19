@@ -17,6 +17,9 @@ const Project = () => {
           />
         </span>
       </h1>
+      <p className=" flex gap-3 w-full mt-6 justify-end text-[#8c8b8b] sm:text-md md:text-xl md:mt-10">
+        Please, get in touch If you want more work samples
+      </p>
       {/* projects */}
 
       <div className="paddings innerWidth w-4/5 flex justify-center items-center gap-12  mt-12">
