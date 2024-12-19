@@ -15,6 +15,7 @@ const Card = ({ title = 'Card title', price = 30, crown, children }) => {
           {title}
           <span>{crown}</span>{' '}
           <img
+            loading="lazy"
             src="./assets/images/services/curve.png"
             alt="curve"
             className="absolute bottom-[-2.5rem] h-[3.8rem] "

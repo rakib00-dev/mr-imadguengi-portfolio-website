@@ -2,7 +2,10 @@ import Button from './Button';
 
 const Project = () => {
   return (
-    <section className="paddings innerWidth gird items-center relative w-4/5 overflow-hidden">
+    <section
+      id="projects"
+      className="paddings innerWidth gird items-center relative w-4/5 overflow-hidden"
+    >
       <h1 className="text-3xl flex gap-3 w-full font-extrabold text-white justify-end sm:text-4xl md:text-6xl">
         Reallife{'   '}
         <span>

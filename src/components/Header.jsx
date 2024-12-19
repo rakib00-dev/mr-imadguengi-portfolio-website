@@ -49,7 +49,15 @@ const Header = () => {
         </div>
 
         {/* hero content */}
-        <div className="xl:w-2/4 lg:w-4/5">
+        <motion.div
+          initial={{ scale: 0.8, x: -100, opacity: 0 }}
+          animate={{ scale: 1, x: 0, opacity: 1 }}
+          transition={{
+            delay: 1,
+            type: 'spring',
+          }}
+          className="xl:w-2/4 lg:w-4/5"
+        >
           <h1 className="text-5xl font-bold text-white leading-tight">
             Cutting-Edge Creations: Where Your Vision Comes to Life
           </h1>
@@ -68,7 +76,7 @@ const Header = () => {
               className={'scale-105 hover:scale-125'}
             ></Button>
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

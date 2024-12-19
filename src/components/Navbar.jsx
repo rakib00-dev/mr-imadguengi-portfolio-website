@@ -1,7 +1,7 @@
 import Button from './Button';
 import { motion } from 'motion/react';
 
-const Navbar = () => {
+const Navbar = ({ className, children }) => {
   return (
     <motion.section
       initial={{ y: -100, opacity: 0 }}
@@ -10,7 +10,7 @@ const Navbar = () => {
         delay: 0.8,
         type: 'spring',
       }}
-      className="nav-wrapper"
+      className={`nav-wrapper ${className}`}
       style={{ backgroundColor: 'var(--black)' }}
     >
       {/* nav-container */}
@@ -27,6 +27,7 @@ const Navbar = () => {
           className="fill-white p-1 rounded-xl "
         >
           <img
+            loading="lazy"
             src="./assets/images/navbar/logo1.png"
             alt="logo"
             width={40}
@@ -47,7 +48,7 @@ const Navbar = () => {
 
             <li>
               <a
-                href="#"
+                href="#services"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
               >
                 Services
@@ -55,7 +56,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#projects"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
               >
                 Projects
@@ -63,7 +64,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#about"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
               >
                 About
@@ -71,7 +72,7 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#contact"
                 className="  transition-all font-bold lg:text-base xl:text-xl text-white "
               >
                 Contact us
@@ -90,6 +91,7 @@ const Navbar = () => {
           {/* </a> */}
         </div>
       </div>
+      {children}
     </motion.section>
   );
 };

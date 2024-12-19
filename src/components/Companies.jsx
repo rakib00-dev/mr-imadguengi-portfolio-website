@@ -44,6 +44,7 @@ const Companies = () => {
             key={i}
           >
             <img
+              loading="lazy"
               src={src}
               alt="companies"
               className="rounded-sm "

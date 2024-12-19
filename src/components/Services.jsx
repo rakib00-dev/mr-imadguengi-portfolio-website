@@ -3,9 +3,13 @@ import Card from './Card';
 
 const Services = () => {
   return (
-    <section className="paddings innerWidth gird items-center relative  ">
+    <section
+      id="services"
+      className="paddings innerWidth gird items-center relative  "
+    >
       {/* head */}
       <img
+        loading="lazy"
         src="./assets/images/services/arrow.png"
         alt=""
         className="absolute right-0 top-[-11rem] w-[20rem] "
