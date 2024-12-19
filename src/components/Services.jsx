@@ -12,20 +12,20 @@ const Services = () => {
         loading="lazy"
         src="./assets/images/services/arrow.png"
         alt=""
-        className="absolute right-0 top-[-11rem] w-[20rem] "
+        className="absolute right-0 top-[-11rem] w-[20rem] hidden md:block "
       />
-      <h1 className="text-6xl inline font-extrabold text-white">
+      <h1 className="text-3xl inline font-extrabold text-white sm:text-4xl md:text-6xl">
         Our{' '}
         <Button
           text={'Video Ediing'}
           px="6"
           py="6"
-          className={'font-extrabold text-5xl'}
+          className={'font-extrabold text-2xl md:text-5xl'}
         />{' '}
         services
       </h1>
       {/* cards */}
-      <div className="paddings innerWidth w-4/5 flex justify-center items-center gap-12  mt-12">
+      <div className="p-1 innerWidth w-4/5 flex justify-center items-center gap-12 mt-12 flex-wrap md:p-">
         {/* card1 */}
         <Card title="Basic">
           <li>{'>'} Cutting and trimming clips</li>

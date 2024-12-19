@@ -35,19 +35,19 @@ const Companies = () => {
           // Gap between slides
         }}
         extensions={{ AutoScroll }} // Use the AutoScroll extension
-        className="paddings innerWith flex flex-row justify-center slider-track overflow-hidden"
+        className="paddings innerWith flex flex-row justify-center overflow-hidden"
       >
         {/* card */}
         {copmaniesLogo.map((src, i) => (
           <SplideSlide
-            className="p-2 flex w-80 shadow-xl justify-center items-center slide"
+            className="flex w-40 shadow-xl justify-center items-center md:w-80"
             key={i}
           >
             <img
               loading="lazy"
               src={src}
               alt="companies"
-              className="rounded-sm "
+              className="rounded-sm h-6"
               // width={288}
               // height={}f
             />

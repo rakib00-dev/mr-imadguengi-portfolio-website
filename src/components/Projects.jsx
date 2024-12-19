@@ -10,7 +10,7 @@ const Project = () => {
         Reallife{'   '}
         <span>
           <Button
-            text={'Editing Projects'}
+            text={'Projects'}
             px="6"
             py="6"
             className={'font-extrabold text-2xl md:text-5xl'}
