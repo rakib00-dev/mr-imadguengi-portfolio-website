@@ -2,11 +2,11 @@ import { div } from 'motion/react-client';
 
 const Card = ({ title = 'Card title', price = 30, crown, children }) => {
   return (
-    <div className="card bg-[#1c1c1c] w-[24rem] h-[30rem]  shadow-xl text-white relative flex justify-center items-center overflow-hidden  ">
+    <div className="card  w-[24rem] h-[30rem]  shadow-xl  relative flex justify-center items-center overflow-hidden  ">
       {/* h-[25rem] */}
       <div
         className=" h-60 w-60 blur-[220px] absolute"
-        style={{ background: 'var(--logo-gradient)' }}
+        style={{ background: 'var(--card-gradient)' }}
       ></div>
 
       {/* card body */}

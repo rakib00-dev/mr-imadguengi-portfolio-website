@@ -4,6 +4,7 @@
 
 /* Custom CSS */
 :root {
+  --navBg: #e2dbc5;
   --primary: rgb(236, 178, 155) 100%;
   --secondary: rgb(255, 240, 235) 100%;
   --token-161ccc3d-44f0-4acb-b5d6-f24ee1f26c34: rgb(244, 117, 129);
@@ -22,6 +23,12 @@
     rgb(255 208 190) 100%
   );
 
+  --card-gradient: linear-gradient(
+    41deg,
+    rgb(139, 35, 45) 0%,
+    rgb(202, 164, 149) 100%
+  );
+
   --border: rgba(185, 98, 63, 0.822);
 
   /* --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%); */
@@ -31,6 +38,10 @@
   --shadow: 0px 23px 21px -8px rgba(255, 186, 136, 0.25);
 }
 
+p {
+  color: #1c1c1c;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,11 +49,11 @@
   font-family: 'Manrope', 'Manrope Placeholder', sans-serif;
   scroll-behavior: smooth;
   font-size: 1 rem;
-  color: #d5d1c5;
+  color: #1c1c1c;
 }
 
 body {
-  background-color: var(--black);
+  /* background-color: var(--black); */
 }
 
 a {

@@ -14,7 +14,7 @@ const Services = () => {
         alt=""
         className="absolute right-0 top-[-11rem] w-[20rem] hidden md:block "
       />
-      <h1 className="text-3xl inline font-extrabold text-white sm:text-4xl md:text-6xl">
+      <h1 className="text-3xl inline font-extrabold  sm:text-4xl md:text-6xl">
         Our{' '}
         <Button
           text={'Video Ediing'}
@@ -38,14 +38,16 @@ const Services = () => {
         {/* card2 */}
         <Card title="Standard" price={70}>
           <li>
-            {'>'} <span className="text-[#ecb29b] font-bold">Basic</span>{' '}
+            {'>'}{' '}
+            <span className="text-[#ca5c30] text-lg font-extrabold">Basic</span>{' '}
           </li>
           <li>{'>'} Cutting and trimming clips</li>
           <li>{'>'} Arranging video footage in a timeline</li>
           <li>{'>'} Adding transitions between clips</li>
           <li>
             {'>'} Basic color correction{'  '}
-            <span className="text-[#ecb29b]">...& More</span>{' '}
+            <span className="text-[#ca5c30] text-md">...& More</span>{' '}
+            {/* text-[#ecb29b] */}
           </li>
         </Card>
 
@@ -53,13 +55,18 @@ const Services = () => {
         <Card title="Premium" crown={'👑'} price={200}>
           <li>
             {'>'}{' '}
-            <span className="text-[#ecb29b] font-bold">Basic + Standerd</span>{' '}
+            <span className="text-[#ca5c30] text-lg font-bold">
+              {/* text-[#ecb29b] */}
+              Basic + Standerd
+            </span>{' '}
           </li>
           <li>{'>'} Special effects and animations</li>
           <li>{'>'} Advanced color grading</li>
           <li>{'>'} Custom transitions and effects</li>
           <li>
-            {'>'} (VFX) <span className="text-[#ecb29b]">...& Much More</span>{' '}
+            {'>'} (VFX){' '}
+            <span className="text-[#ca5c30] text-md">...& Much More</span>{' '}
+            {/* text-[#ecb29b] */}
           </li>
         </Card>
       </div>

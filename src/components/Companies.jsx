@@ -47,7 +47,7 @@ const Companies = () => {
               loading="lazy"
               src={src}
               alt="companies"
-              className="rounded-sm h-6"
+              className="rounded-sm h-6 filter invert"
               // width={288}
               // height={}f
             />

@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import OutsideClickHandler from 'react-outside-click-handler';
+import Toggle from './Toggle';
 
 const Navbar = ({ className, children }) => {
   const [menuOpened, setmenuOpened] = useState(false);
@@ -17,18 +18,19 @@ const Navbar = ({ className, children }) => {
 
   return (
     <motion.section
+      data-theme="retro"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
         delay: 0.8,
         type: 'spring',
       }}
-      className={`nav-wrapper ${className} `}
-      style={{ backgroundColor: 'var(--black)' }}
+      className={`nav-wrapper  ${className} `}
+      // style={{ : '' }}
     >
       {/* nav-container */}
       <div
-        className="navbar h-fit p-3 flexCenter innerWidth nav-container gap-0 md:gap-22 lg:gap-44"
+        className="navbar h-fit p-3 flexCenter innerWidth nav-container gap-0 md:gap-22 lg:gap-44 "
         style={{
           backgroundColor: 'var(--black) !importent',
           justifyContent: 'space-around',
@@ -54,14 +56,14 @@ const Navbar = ({ className, children }) => {
           }}
         >
           <ul
-            className="menu menu-horizontal px-4 flexCenter nav-menu gap-3  h-menu"
+            className="menu menu-horizontal px-4 flexCenter nav-menu gap-3  h-menu "
             style={getMenuStyle(menuOpened)}
           >
             {/* <div className="flexCenter nav-menu gap-3 "> */}
             <li>
               <a
                 href="#"
-                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
+                className="transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Home
               </a>
@@ -70,7 +72,7 @@ const Navbar = ({ className, children }) => {
             <li>
               <a
                 href="#services"
-                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
+                className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Services
               </a>
@@ -78,7 +80,7 @@ const Navbar = ({ className, children }) => {
             <li>
               <a
                 href="#projects"
-                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
+                className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Projects
               </a>
@@ -86,7 +88,7 @@ const Navbar = ({ className, children }) => {
             <li>
               <a
                 href="#about"
-                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
+                className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 About
               </a>
@@ -94,7 +96,7 @@ const Navbar = ({ className, children }) => {
             <li>
               <a
                 href="#contact"
-                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
+                className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Contact us
               </a>
@@ -120,6 +122,7 @@ const Navbar = ({ className, children }) => {
         >
           <BiMenuAltRight size={30} />
         </div>
+        {/* <Toggle /> */}
       </div>
       {children}
     </motion.section>

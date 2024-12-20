@@ -25,7 +25,11 @@ function App() {
 
   return (
     <>
-      <Navbar className={active ? 'sticky top-0 z-10' : ''}>
+      <Navbar
+        className={
+          active ? 'sticky top-0 z-10 border-b-2 border-[#3636367b]' : ''
+        }
+      >
         <motion.div
           style={{
             scaleX: scrollYProgress,

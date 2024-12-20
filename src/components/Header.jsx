@@ -3,8 +3,12 @@ import { motion } from 'motion/react';
 
 const Header = () => {
   return (
-    <div className="hero min-h-screen relative bg-[#1c1c1c] *:text-[#d5d1c5]">
+    <div
+      data-theme="retro"
+      className="hero min-h-screen relative  *:text-[#d5d1c5]"
+    >
       <motion.div
+        data-theme="retro"
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
@@ -12,7 +16,7 @@ const Header = () => {
           type: 'spring',
         }}
         className="absolute text-white top-14 border border-y-2 rounded-3xl p-2 text-[0.6rem]  md:text-lg "
-        style={{ borderColor: 'var(--border)' }}
+        style={{ borderColor: 'var(--border)', color: 'black' }}
       >
         Cinematic Editing Services, Creative Video Production, & More
       </motion.div>
@@ -57,10 +61,11 @@ const Header = () => {
           }}
           className="w-full  md:w-1/2"
         >
-          <h1 className="text-2xl font-bold text-white leading-tight lg:text-5xl">
+          <h1 className="text-2xl text-black font-bold  leading-tight lg:text-5xl">
+            {/* text-white */}
             Cutting-Edge Creations: Where Your Vision Comes to Life
           </h1>
-          <p className="py-6 text-[#d5d1c5]">
+          <p className="py-6 text-black">
             "Cutting-Edge Creations: Where Your Vision Comes to Life" is a video
             editing agency dedicated to transforming raw footage into stunning
             visual experiences. Using the latest tools and techniques, we bring
