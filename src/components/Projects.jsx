@@ -34,7 +34,7 @@ const Project = () => {
             loop
           >
             <source
-              src="./assets/videos/Flow-Style-YouTube-Edit.mp4"
+              src="./assets/videos/YouTube-Talking-Head-style.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.
