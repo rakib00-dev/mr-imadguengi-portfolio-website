@@ -56,7 +56,7 @@ const Navbar = ({ className, children }) => {
           }}
         >
           <ul
-            className="menu menu-horizontal px-4 flexCenter nav-menu gap-3  h-menu "
+            className="menu menu-horizontal px-4 flexCenter nav-menu gap-1 h-menu lg:gap-3 "
             style={getMenuStyle(menuOpened)}
           >
             {/* <div className="flexCenter nav-menu gap-3 "> */}
@@ -109,6 +109,7 @@ const Navbar = ({ className, children }) => {
                 'scale-95 hover:scale-100 cursor-pointer px-4 py-2 text-xs md:text-md lg:text-lg'
               }
             />
+            <Toggle />
           </ul>
           {/* <a href="#"> */}
           {/* </a> */}
@@ -122,7 +123,6 @@ const Navbar = ({ className, children }) => {
         >
           <BiMenuAltRight size={30} />
         </div>
-        {/* <Toggle /> */}
       </div>
       {children}
     </motion.section>
