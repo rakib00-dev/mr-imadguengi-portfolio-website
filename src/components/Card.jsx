@@ -2,7 +2,7 @@ import { div } from 'motion/react-client';
 
 const Card = ({ title = 'Card title', price = 30, crown, children }) => {
   return (
-    <div className="card bg-base-100 w-[24rem] h-[30rem]  shadow-xl text-white relative flex justify-center items-center overflow-hidden  ">
+    <div className="card bg-[#1c1c1c] w-[24rem] h-[30rem]  shadow-xl text-white relative flex justify-center items-center overflow-hidden  ">
       {/* h-[25rem] */}
       <div
         className=" h-60 w-60 blur-[220px] absolute"
@@ -11,9 +11,11 @@ const Card = ({ title = 'Card title', price = 30, crown, children }) => {
 
       {/* card body */}
       <div className=" relative card-body text-center gap-12 w-[23rem]   ">
-        <h2 className="card-title flex justify-center items-center   font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text relative mb-12 mt-4 w-full text-3xl md:text-4xl xl:text-5xl">
+        <h2 className="card-title flex justify-center items-center font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text relative mb-12 mt-4 w-full text-3xl md:text-4xl xl:text-5xl">
           {title}
-          <span>{crown}</span>{' '}
+          <span className="font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text">
+            {crown}
+          </span>{' '}
           <img
             loading="lazy"
             src="./assets/images/services/curve.png"
@@ -26,7 +28,7 @@ const Card = ({ title = 'Card title', price = 30, crown, children }) => {
             }}
           />
         </h2>
-        <ul className=" p-2 flex justify-center flex-col items-start leading-[2.5rem] text-[.9rem] ml-5 md:*text-[1rem] xl:p-10">
+        <ul className=" p-2 flex justify-center flex-col items-start leading-[2.5rem] text-[.9rem] ml-5 md:*text-[1rem] xl:p-0">
           {children}
         </ul>
       </div>
