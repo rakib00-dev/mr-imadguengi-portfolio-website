@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 
 const Header = () => {
   return (
-    <div className="hero bg-base-200 min-h-screen relative ">
+    <div className="hero min-h-screen relative bg-[#1c1c1c] *:text-[#d5d1c5]">
       <motion.div
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -60,7 +60,7 @@ const Header = () => {
           <h1 className="text-2xl font-bold text-white leading-tight lg:text-5xl">
             Cutting-Edge Creations: Where Your Vision Comes to Life
           </h1>
-          <p className="py-6">
+          <p className="py-6 text-[#d5d1c5]">
             "Cutting-Edge Creations: Where Your Vision Comes to Life" is a video
             editing agency dedicated to transforming raw footage into stunning
             visual experiences. Using the latest tools and techniques, we bring
