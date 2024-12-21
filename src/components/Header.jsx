@@ -34,7 +34,7 @@ const Header = () => {
             delay: 1,
             type: 'spring',
           }}
-          className="relative rounded-lg  border-solid border-[#ac17626d] border  h-[14rem] shadow-2xl md:h-[15rem] "
+          className="relative rounded-lg  border-solid border-[#ac17626d] border w-[25rem] h-[14rem] shadow-2xl md:h-[15rem] "
         >
           <motion.iframe
             initial={{ scale: 0.8, x: 100, opacity: 0 }}
@@ -44,7 +44,7 @@ const Header = () => {
               type: 'spring',
             }}
             src="https://drive.google.com/file/d/1o-4nCPCE8jdXuTNGn2KPkbL4AA8_tMsf/preview"
-            width="440"
+            width="540"
             height="280"
             allow="autoplay"
             className="rounded-lg shadow-2xl bg-center w-full h-full"

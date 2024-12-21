@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import OutsideClickHandler from 'react-outside-click-handler';
-import Toggle from './Toggle';
+import { Link } from 'react-router';
 
 const Navbar = ({ className, children, toggle }) => {
   const [menuOpened, setmenuOpened] = useState(false);
@@ -62,44 +62,44 @@ const Navbar = ({ className, children, toggle }) => {
           >
             {/* <div className="flexCenter nav-menu gap-3 "> */}
             <li>
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#projects"
+              <Link
+                to="projects"
                 className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#services"
+              <Link
+                to="services"
                 className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Services
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#about"
+              <Link
+                to="about"
                 className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contact"
+              <Link
+                to="contact"
                 className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Contact us
-              </a>
+              </Link>
             </li>
             {/* </div> */}
             <Button
@@ -111,7 +111,7 @@ const Navbar = ({ className, children, toggle }) => {
             />
             {toggle}
           </ul>
-          {/* <a href="#"> */}
+          {/* <Link href="#"> */}
           {/* </a> */}
         </OutsideClickHandler>
         {/* menu icon */}

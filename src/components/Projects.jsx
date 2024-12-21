@@ -1,6 +1,6 @@
 import Button from './Button';
 
-const Project = () => {
+const Project = ({ classN, children }) => {
   return (
     <section
       id="projects"
@@ -25,7 +25,9 @@ const Project = () => {
 
       <div className="paddings innerWidth w-4/5 flex justify-center items-center gap-12  mt-12">
         {/* video container */}
-        <div className="flex w-4/5 justify-center items-center flex-col-reverse m-auto gap-6 md:flex-row ">
+        <div
+          className={`flex w-4/5 justify-center items-center flex-col-reverse m-auto gap-6 md:flex-row ${classN}`}
+        >
           {/* first video */}
           <video
             controls
@@ -55,13 +57,7 @@ const Project = () => {
             />
             Your browser does not support the video tag.
           </video>
-          {/* <br />
-          <iframe
-            src="https://drive.google.com/file/d/1o-4nCPCE8jdXuTNGn2KPkbL4AA8_tMsf/preview"
-            width="640"
-            height="480"
-            allow="autoplay"
-          ></iframe> */}
+          {children}
         </div>
       </div>
     </section>
