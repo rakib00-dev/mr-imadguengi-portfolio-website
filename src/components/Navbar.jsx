@@ -5,7 +5,7 @@ import { BiMenuAltRight } from 'react-icons/bi';
 import OutsideClickHandler from 'react-outside-click-handler';
 import Toggle from './Toggle';
 
-const Navbar = ({ className, children }) => {
+const Navbar = ({ className, children, toggle }) => {
   const [menuOpened, setmenuOpened] = useState(false);
 
   const getMenuStyle = (menuOpened) => {
@@ -18,6 +18,8 @@ const Navbar = ({ className, children }) => {
 
   return (
     <motion.section
+      id="nav"
+      data-theme="retro"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
@@ -107,7 +109,7 @@ const Navbar = ({ className, children }) => {
                 'scale-95 hover:scale-100 cursor-pointer px-4 py-2 text-xs md:text-md lg:text-lg'
               }
             />
-            <Toggle />
+            {toggle}
           </ul>
           {/* <a href="#"> */}
           {/* </a> */}

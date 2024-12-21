@@ -15,20 +15,13 @@ import { FiMoon, FiSun } from 'react-icons/fi';
 //   );
 // };
 
-const Toggle = () => {
-  const [isChecked, setIsChecked] = useState(null);
-  const checkCheckBox = (e) => {
-    setIsChecked(e.target.checked);
-    console.log(e.target.checked);
-    console.log(isChecked);
-  };
-
+const Toggle = (props) => {
   return (
     <div className="relative flex w-fit items-center rounded-full">
       <input
         type="checkbox"
         className="toggle toggle-accent"
-        onChange={checkCheckBox}
+        onChange={(e) => props.checkCheckBox(e)}
         defaultChecked
       />
       <motion.span

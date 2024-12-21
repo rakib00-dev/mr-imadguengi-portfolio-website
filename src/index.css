@@ -38,6 +38,9 @@
   --shadow: 0px 23px 21px -8px rgba(255, 186, 136, 0.25);
 }
 
+/* .company-filter {
+  filter: invert(1);
+} */
 aside > * {
   color: #1c1c1c;
 }
@@ -49,7 +52,7 @@ aside > * {
   font-family: 'Manrope', 'Manrope Placeholder', sans-serif;
   scroll-behavior: smooth;
   font-size: 1 rem;
-  /* color: #1c1c1c; */
+  color: #1c1c1c;
   /* color: white; */
 }
 
@@ -152,3 +155,16 @@ a {
   }
 }
 /* Navbar ⬆️ */
+
+/* theme mode */
+/* @media (prefers-color-scheme: dark) {
+  * {
+    color: white;
+  }
+  body {
+    background-color: var(--black);
+  }
+  .company-filter {
+    filter: invert(0);
+  }
+} */
