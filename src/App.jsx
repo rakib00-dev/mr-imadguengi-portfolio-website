@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Companies from './components/Companies';
 import CountsOfWork from './components/CountsOfWork';
 import Header from './components/Header';
@@ -11,13 +12,9 @@ import Footer from './components/Footer';
 import Toggle from './components/Toggle';
 
 function App() {
-  // console.log(htmlTag.dataset.theme);
-
   const [isChecked, setIsChecked] = useState(true);
   const isClickedFun = (e) => {
     setIsChecked(e.target.checked);
-    // console.log(e.target.checked);
-    // console.log(isChecked);
   };
 
   useEffect(() => {
@@ -39,11 +36,6 @@ function App() {
       companies.forEach((e) => {
         e.style.filter = 'invert(1)';
       });
-      // cardTitle.forEach((e) => {
-      //   e.classList.remove =
-      //     'text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text';
-      //   e.classList.remove = 'text-transparent bg-[#000] bg-clip-text';
-      // });
       console.log('retro');
     } else {
       htmlTag.dataset.theme = 'dark';
@@ -54,10 +46,6 @@ function App() {
       companies.forEach((e) => {
         e.style.filter = 'invert(0)';
       });
-      // cardTitle.forEach((e) => {
-      //   e.classList.add =
-      //     'text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text';
-      // });
       console.log('dark');
     }
   }, [isChecked]);
