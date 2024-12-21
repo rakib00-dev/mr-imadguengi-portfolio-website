@@ -4,7 +4,6 @@
 
 /* Custom CSS */
 :root {
-  --navBg: #e2dbc5;
   --primary: rgb(236, 178, 155) 100%;
   --secondary: rgb(255, 240, 235) 100%;
   --token-161ccc3d-44f0-4acb-b5d6-f24ee1f26c34: rgb(244, 117, 129);
@@ -23,12 +22,6 @@
     rgb(255 208 190) 100%
   );
 
-  --card-gradient: linear-gradient(
-    41deg,
-    rgb(139, 35, 45) 0%,
-    rgb(202, 164, 149) 100%
-  );
-
   --border: rgba(185, 98, 63, 0.822);
 
   /* --blue-gradient: linear-gradient(97.05deg, #4066ff 3.76%, #2949c6 100%); */
@@ -38,17 +31,6 @@
   --shadow: 0px 23px 21px -8px rgba(255, 186, 136, 0.25);
 }
 
-/* .company-filter {
-  filter: invert(1);
-} */
-aside > * {
-  color: #1c1c1c;
-}
-
-.text-grad {
-  @apply: text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -56,12 +38,11 @@ aside > * {
   font-family: 'Manrope', 'Manrope Placeholder', sans-serif;
   scroll-behavior: smooth;
   font-size: 1 rem;
-  /* color: #1c1c1c; */
-  /* color: white; */
+  color: #d5d1c5;
 }
 
 body {
-  /* background-color: var(--black); */
+  background-color: var(--black);
 }
 
 a {
@@ -146,8 +127,7 @@ a {
     position: absolute;
     top: 3rem;
     right: 4rem;
-    /* background: rgb(42, 42, 42); */
-    background: #f7e7ce;
+    background: rgb(42, 42, 42);
     flex-direction: column;
     gap: 1rem;
     padding: 3rem;
@@ -159,16 +139,3 @@ a {
   }
 }
 /* Navbar ⬆️ */
-
-/* theme mode */
-/* @media (prefers-color-scheme: dark) {
-  * {
-    color: white;
-  }
-  body {
-    background-color: var(--black);
-  }
-  .company-filter {
-    filter: invert(0);
-  }
-} */

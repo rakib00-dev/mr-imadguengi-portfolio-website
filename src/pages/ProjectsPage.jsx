@@ -9,25 +9,25 @@ const ProjectsPage = () => {
       <>
         <iframe
           src="https://drive.google.com/file/d/1o-4nCPCE8jdXuTNGn2KPkbL4AA8_tMsf/preview"
-          width="640"
+          width="450"
           height="280"
           allow="autoplay"
         ></iframe>
         <iframe
           src="https://drive.google.com/file/d/1o-4nCPCE8jdXuTNGn2KPkbL4AA8_tMsf/preview"
-          width="640"
+          width="450"
           height="280"
           allow="autoplay"
         ></iframe>
         <iframe
           src="https://drive.google.com/file/d/1o-4nCPCE8jdXuTNGn2KPkbL4AA8_tMsf/preview"
-          width="640"
+          width="450"
           height="280"
           allow="autoplay"
         ></iframe>
         <iframe
           src="https://drive.google.com/file/d/1o-4nCPCE8jdXuTNGn2KPkbL4AA8_tMsf/preview"
-          width="640"
+          width="450"
           height="280"
           allow="autoplay"
         ></iframe>

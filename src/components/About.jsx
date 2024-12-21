@@ -6,7 +6,7 @@ const About = () => {
       id="about"
       className="paddings innerWidth gird items-center relative w-4/5 overflow-hidden rounded-2xl mb-10"
     >
-      <h1 className="text-3xl flex gap-3 w-full font-extrabold justify-center sm:text-4xl md:text-6xl">
+      <h1 className="text-3xl flex gap-3 w-full font-extrabold text-white justify-center sm:text-4xl md:text-6xl">
         Who {'   '}
         <span>
           <Button
@@ -29,11 +29,10 @@ const About = () => {
           />
           {/* about content */}
           <div className="flex flex-col justify-around h-96 md:h-72">
-            <h2 className="relative top-0 font-bold text-2xl text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text mb-5 md:text-4xl text-grad">
+            <h2 className="relative top-0 font-bold text-2xl text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text mb-5 md:text-4xl">
               Bringing Your Vision to Life
             </h2>
-            <p className="text-sm">
-              {/* text-[#8c8b8b]  */}
+            <p className="text-[#8c8b8b] text-sm">
               We are a video editing agency that turns raw footage into
               polished, professional videos. Our services include editing, color
               correction, sound design, motion graphics, and visual effects to

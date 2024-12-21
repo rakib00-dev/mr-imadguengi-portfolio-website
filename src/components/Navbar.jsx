@@ -3,9 +3,8 @@ import { motion } from 'motion/react';
 import { useState } from 'react';
 import { BiMenuAltRight } from 'react-icons/bi';
 import OutsideClickHandler from 'react-outside-click-handler';
-import { Link } from 'react-router';
 
-const Navbar = ({ className, children, toggle }) => {
+const Navbar = ({ className, children }) => {
   const [menuOpened, setmenuOpened] = useState(false);
 
   const getMenuStyle = (menuOpened) => {
@@ -18,20 +17,18 @@ const Navbar = ({ className, children, toggle }) => {
 
   return (
     <motion.section
-      id="nav"
-      data-theme="retro"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
         delay: 0.8,
         type: 'spring',
       }}
-      className={`nav-wrapper  ${className} `}
-      // style={{ : '' }}
+      className={`nav-wrapper ${className} `}
+      style={{ backgroundColor: 'var(--black)' }}
     >
       {/* nav-container */}
       <div
-        className="navbar h-fit p-3 flexCenter innerWidth nav-container gap-0 md:gap-22 lg:gap-44 "
+        className="navbar h-fit p-3 flexCenter innerWidth nav-container gap-0 md:gap-22 lg:gap-44"
         style={{
           backgroundColor: 'var(--black) !importent',
           justifyContent: 'space-around',
@@ -57,49 +54,50 @@ const Navbar = ({ className, children, toggle }) => {
           }}
         >
           <ul
-            className="menu menu-horizontal px-4 flexCenter nav-menu gap-1 h-menu lg:gap-3 "
+            className="menu menu-horizontal px-4 flexCenter nav-menu gap-3  h-menu"
             style={getMenuStyle(menuOpened)}
           >
             {/* <div className="flexCenter nav-menu gap-3 "> */}
             <li>
-              <Link
-                to="/"
-                className="transition-all font-bold lg:text-base xl:text-xl  "
+              <a
+                href="#"
+                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
               >
                 Home
-              </Link>
+              </a>
             </li>
+
             <li>
-              <Link
-                to="projects"
-                className="  transition-all font-bold lg:text-base xl:text-xl  "
-              >
-                Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="services"
-                className="  transition-all font-bold lg:text-base xl:text-xl  "
+              <a
+                href="#services"
+                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
               >
                 Services
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="about"
-                className="  transition-all font-bold lg:text-base xl:text-xl  "
+              <a
+                href="#projects"
+                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
               >
                 About
-              </Link>
+              </a>
             </li>
             <li>
-              <Link
-                to="contact"
-                className="  transition-all font-bold lg:text-base xl:text-xl  "
+              <a
+                href="#contact"
+                className="  transition-all font-bold lg:text-base xl:text-xl text-white "
               >
                 Contact us
-              </Link>
+              </a>
             </li>
             {/* </div> */}
             <Button
@@ -109,9 +107,8 @@ const Navbar = ({ className, children, toggle }) => {
                 'scale-95 hover:scale-100 cursor-pointer px-4 py-2 text-xs md:text-md lg:text-lg'
               }
             />
-            {toggle}
           </ul>
-          {/* <Link href="#"> */}
+          {/* <a href="#"> */}
           {/* </a> */}
         </OutsideClickHandler>
         {/* menu icon */}
