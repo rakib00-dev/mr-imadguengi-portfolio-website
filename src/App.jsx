@@ -26,6 +26,8 @@ function App() {
     const navTag = document.getElementById('nav');
     let allElements = document.querySelectorAll('*');
     const companies = document.querySelectorAll('.company-filter');
+    const cardTitle = document.querySelectorAll('.card-title');
+
     console.log(companies);
 
     if (isChecked) {
@@ -37,6 +39,11 @@ function App() {
       companies.forEach((e) => {
         e.style.filter = 'invert(1)';
       });
+      // cardTitle.forEach((e) => {
+      //   e.classList.remove =
+      //     'text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text';
+      //   e.classList.remove = 'text-transparent bg-[#000] bg-clip-text';
+      // });
       console.log('retro');
     } else {
       htmlTag.dataset.theme = 'dark';
@@ -47,6 +54,10 @@ function App() {
       companies.forEach((e) => {
         e.style.filter = 'invert(0)';
       });
+      // cardTitle.forEach((e) => {
+      //   e.classList.add =
+      //     'text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text';
+      // });
       console.log('dark');
     }
   }, [isChecked]);

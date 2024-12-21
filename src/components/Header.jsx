@@ -34,9 +34,22 @@ const Header = () => {
             delay: 1,
             type: 'spring',
           }}
-          className="relative rounded-lg max-w-[30rem] border-solid border-[#ac17626d] border  h-[14rem] shadow-2xl md:h-[20rem] "
+          className="relative rounded-lg  border-solid border-[#ac17626d] border  h-[14rem] shadow-2xl md:h-[15rem] "
         >
-          <motion.img
+          <motion.iframe
+            initial={{ scale: 0.8, x: 100, opacity: 0 }}
+            animate={{ scale: 1, x: 0, opacity: 1 }}
+            transition={{
+              delay: 1,
+              type: 'spring',
+            }}
+            src="https://drive.google.com/file/d/1o-4nCPCE8jdXuTNGn2KPkbL4AA8_tMsf/preview"
+            width="440"
+            height="280"
+            allow="autoplay"
+            className="rounded-lg shadow-2xl bg-center w-full h-full"
+          ></motion.iframe>
+          {/* <motion.img
             initial={{ scale: 0.8, x: 100, opacity: 0 }}
             animate={{ scale: 1, x: 0, opacity: 1 }}
             transition={{
@@ -45,7 +58,7 @@ const Header = () => {
             }}
             src="./assets/images/hero/hero2.jpg"
             className="rounded-lg shadow-2xl bg-center w-full h-full"
-          />
+          /> */}
         </motion.div>
 
         {/* hero content */}

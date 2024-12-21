@@ -11,7 +11,7 @@ const Card = ({ title = 'Card title', price = 30, crown, children }) => {
 
       {/* card body */}
       <div className=" relative card-body text-center gap-12 w-[23rem]   ">
-        <h2 className="card-title flex justify-center items-center font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text relative mb-12 mt-4 w-full text-3xl md:text-4xl xl:text-5xl">
+        <h2 className="card-title flex justify-center items-center font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text relative mb-12 mt-4 w-full text-3xl md:text-4xl xl:text-5xl text-grad">
           {title}
           <span className="font-bold text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text">
             {crown}

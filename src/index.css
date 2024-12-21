@@ -45,6 +45,10 @@ aside > * {
   color: #1c1c1c;
 }
 
+.text-grad {
+  @apply: text-transparent bg-[linear-gradient(41deg,_rgb(168_43_55)_0%,_rgb(255_208_190)_100%)] bg-clip-text;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -52,7 +56,7 @@ aside > * {
   font-family: 'Manrope', 'Manrope Placeholder', sans-serif;
   scroll-behavior: smooth;
   font-size: 1 rem;
-  color: #1c1c1c;
+  /* color: #1c1c1c; */
   /* color: white; */
 }
 
