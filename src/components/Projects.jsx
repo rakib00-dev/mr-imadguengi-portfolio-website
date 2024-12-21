@@ -55,15 +55,6 @@ const Project = () => {
             />
             Your browser does not support the video tag.
           </video>
-          <video
-            controls
-            className="rounded-xl h-96 w-full lg:w-1/2 md:w-2/3 "
-            autoPlay
-            muted
-            loop
-          >
-            <source src="./assets/videos/Portfolio.mp4" type="video/mp4" />
-          </video>
 
           {/* <iframe
             src="https://drive.google.com/file/d/1o-4nCPCE8jdXuTNGn2KPkbL4AA8_tMsf/preview"
