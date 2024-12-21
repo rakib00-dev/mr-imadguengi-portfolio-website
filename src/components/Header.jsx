@@ -34,9 +34,9 @@ const Header = () => {
             delay: 1,
             type: 'spring',
           }}
-          className="relative rounded-lg  border-solid border-[#ac17626d] border w-[25rem] h-[14rem] shadow-2xl md:h-[15rem] "
+          className="relative rounded-lg  border-solid border-[#ac17626d] border w-[25rem] h-[14rem] shadow-2xl  "
         >
-          <motion.iframe
+          {/* <motion.iframe
             initial={{ scale: 0.8, x: 100, opacity: 0 }}
             animate={{ scale: 1, x: 0, opacity: 1 }}
             transition={{
@@ -48,7 +48,25 @@ const Header = () => {
             height="280"
             allow="autoplay"
             className="rounded-lg shadow-2xl bg-center w-full h-full"
-          ></motion.iframe>
+          ></motion.iframe> */}
+          <motion.video
+            initial={{ scale: 0.8, x: 100, opacity: 0 }}
+            animate={{ scale: 1, x: 0, opacity: 1 }}
+            transition={{
+              delay: 1,
+              type: 'spring',
+            }}
+            width="540"
+            height="280"
+            allow="autoplay"
+            className="rounded-lg shadow-2xl bg-center w-full h-full"
+            controls
+            autoPlay
+            muted
+            loop
+          >
+            <source src="./assets/videos/saurov.mp4" type="video/mp4" />
+          </motion.video>
           {/* <motion.img
             initial={{ scale: 0.8, x: 100, opacity: 0 }}
             animate={{ scale: 1, x: 0, opacity: 1 }}
