@@ -12,12 +12,48 @@ const HomePage = () => {
       <Header />
       <Companies />
       <CountsOfWork />
-      <Projects />
+      <Projects children={<ProjectEle />} />
       <Services />
       <About />
       <Footer />
     </>
   );
+
+  function ProjectEle() {
+    return (
+      <>
+        {/* first video */}
+        <video
+          controls
+          className="rounded-xl h-[24rem] w-full lg:w-1/2 md:w-2/3 "
+          autoPlay
+          muted
+          loop
+        >
+          <source
+            src="./assets/videos/YouTube-Talking-Head-style.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* second video */}
+        <video
+          controls
+          className="rounded-xl h-96 w-full lg:w-1/2 md:w-2/3 "
+          autoPlay
+          muted
+          loop
+        >
+          <source
+            src="./assets/videos/Animated-Health-Shorts.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </>
+    );
+  }
 };
 
 export default HomePage;
