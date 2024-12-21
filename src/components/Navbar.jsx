@@ -18,7 +18,6 @@ const Navbar = ({ className, children }) => {
 
   return (
     <motion.section
-      data-theme="retro"
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
@@ -68,21 +67,20 @@ const Navbar = ({ className, children }) => {
                 Home
               </a>
             </li>
-
-            <li>
-              <a
-                href="#services"
-                className="  transition-all font-bold lg:text-base xl:text-xl  "
-              >
-                Services
-              </a>
-            </li>
             <li>
               <a
                 href="#projects"
                 className="  transition-all font-bold lg:text-base xl:text-xl  "
               >
                 Projects
+              </a>
+            </li>
+            <li>
+              <a
+                href="#services"
+                className="  transition-all font-bold lg:text-base xl:text-xl  "
+              >
+                Services
               </a>
             </li>
             <li>

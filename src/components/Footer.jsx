@@ -12,7 +12,7 @@ const Footer = () => {
       id="contact"
       className="paddings innerWidth footer footer-center bg-[#ecb29b] text-primary-content p-10 "
     >
-      <aside className="*:text-black">
+      <aside className="">
         <div
           style={{ background: 'var(--logo-gradient)' }}
           className="fill-white p-1 rounded-xl "

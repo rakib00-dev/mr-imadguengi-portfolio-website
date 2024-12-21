@@ -17,7 +17,8 @@ const Project = () => {
           />
         </span>
       </h1>
-      <p className=" flex gap-3 w-full mt-6 justify-end text-[#8c8b8b] sm:text-md md:text-xl md:mt-10">
+      <p className=" flex gap-3 w-full mt-6 justify-end  sm:text-md md:text-xl md:mt-10">
+        {/* text-[#8c8b8b] */}
         Please, get in touch If you want more work samples
       </p>
       {/* projects */}
