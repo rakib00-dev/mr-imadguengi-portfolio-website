@@ -52,27 +52,27 @@ const Footer = () => {
           </div>
           <div className="lg:w-1/4 md:w-1/2 w-full px-4">
             <h2 className="title-font font-medium text-white tracking-widest text-sm mb-3">
-              CATEGORIES
+              Packages
             </h2>
             <nav className="list-none mb-10">
               <li>
                 <a className="text-gray-400 hover:text-white cursor-pointer">
-                  First Link
+                  Basic
                 </a>
               </li>
               <li>
                 <a className="text-gray-400 hover:text-white cursor-pointer">
-                  Second Link
+                  Standard
                 </a>
               </li>
               <li>
                 <a className="text-gray-400 hover:text-white cursor-pointer">
-                  Third Link
+                  Premium
                 </a>
               </li>
               <li>
                 <a className="text-gray-400 hover:text-white cursor-pointer">
-                  Fourth Link
+                  Custom
                 </a>
               </li>
             </nav>
